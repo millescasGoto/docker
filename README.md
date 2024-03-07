@@ -24,3 +24,15 @@ docker rmi <images> or <id>
 ---- Inspect -----
 
 docker inspect <image> or <id>
+
+---- Build -----
+
+sudo docker build -t <image>
+
+---- Expose container -----
+
+docker run -d -p <targetport>:<images port> <images>
+
+---- Volume -----
+
+docker run -v <local folder>:<target folder> <images>
