@@ -9,12 +9,13 @@ docker images
 
 ----- Pull images ----
 
-docker pull <image>
+docker pull <images>  ---> without tag will pull the latest 
 
 ---- Run -----
 
-docker run <images> or <id>
-docker run -d <image> or <id>   ----> detach mode 
+docker run <images:tag> or <id> 
+docker run -d <images:tag> or <id>   ----> detach mode 
+docker run -it <images:tag> or <id> 
 
 ---- Delete -----
 
@@ -27,12 +28,12 @@ docker inspect <image> or <id>
 
 ---- Build -----
 
-sudo docker build -t <image>
+docker build . -f <Dockerfile> -t <image:tag>
 
 ---- Expose container -----
 
-docker run -d -p <targetport>:<images port> <images>
+docker run -d -p <targetport>:<images port> <images:tag>
 
 ---- Volume -----
 
-docker run -v <local folder>:<target folder> <images>
+docker run -it -v <local-folder>:<target-folder> <images:tag>
