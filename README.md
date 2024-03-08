@@ -30,10 +30,10 @@ docker inspect <image> or <id>
 
 docker build . -f <Dockerfile> -t <image:tag>
 
----- Expose container -----
-
-docker run -d -p <targetport>:<images port> <images:tag>
-
 ---- Volume -----
 
 docker run -it -v <local-folder>:<target-folder> <images:tag>
+
+---- Expose container -----
+
+docker run -d -p <targetport>:<images port> <images:tag>
