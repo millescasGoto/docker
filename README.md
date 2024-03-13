@@ -41,7 +41,7 @@ docker build . -f <Dockerfile> -t <image:tag>
 
 ----- Volume -----
 
-docker run -it -v "local-folder":<target-folder> <images:tag>
+docker run -it -v <local-folder>:<target-folder> <images:tag>
 
 ----- Expose container -----
 
