@@ -9,11 +9,11 @@ docker images
 
 ----- Pull images -----
 
-docker pull **images**  ---> without tag will pull the latest 
+docker pull <images> ---> without tag will pull the latest 
 
 ----- Run  -----
 
-docker run **images:tag** or **id** 
+docker run <images:tag> or <id> 
 docker run -d <images:tag> or <id>   ----> detach mode 
 docker run -it <images:tag> or <id> 
 
