@@ -27,7 +27,7 @@ git clone https://[git-user]:[git-token]@github.com/jive/icu-bot.git
 > ```
 2. Set up your environment variables by creating a `.env` file with the following variables:
 > [!NOTE]
-> The `.env` must go under `PATH/icu-bot/.env` 
+> The `.env` must go under `PATH/icu-bot/` directory.
 >
 > For the env variables DB_NAME, DB_USERNAME, and DB_PASSWORD go to `local-env/.env.postgres` and match the postgres variables.
 ```
@@ -66,11 +66,11 @@ docker compose -f docker-compose.yaml up
 5. The bot should now be running locally and connected to your Slack workspace.
 
 > [!NOTE]
-> To stop the docker compose type this command under the `local_env` directory
+> To stop the docker compose, type this command under the `local_env` directory
 >```
 >docker compose down 
 >```
-> To remove the docker compose volume(database) type this command under the `local_env` directory
+> To remove the docker compose volume(database), type this command under the `local_env` directory
 >```
 >docker compose down -v 
 >```
