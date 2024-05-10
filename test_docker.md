@@ -7,13 +7,14 @@ This Slack bot allows you to manage incidents in your Slack workspace. To run th
 ### Requirements
 
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/) 
+* [GitHub create personal token](https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-tokens)
 
 ### Installation
 
 1. Clone this repository, and replace the user and token with yours.
 
 ```
-git clone https://[user]:[token]@github.com/jive/icu-bot.git
+git clone https://[git-user]:[git-token]@github.com/jive/icu-bot.git
 ```
 > [!WARNING] 
 > If you have a Postgres database running on your local machine, you should kill the `PID` following this command:
@@ -24,10 +25,9 @@ git clone https://[user]:[token]@github.com/jive/icu-bot.git
 > ```
 > kill -9 "PID"
 > ```
-
 2. Set up your environment variables by creating a `.env` file with the following variables:
 > [!NOTE]
-> `.env` file must go into the main directory 
+> The `.env` must go under `PATH/icu-bot/.env`
 ```
 OUTAGE_CHANNEL_ID=<your_outage_channel_id>
     
