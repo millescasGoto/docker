@@ -24,14 +24,14 @@ cd local-env
 
 > [!WARNING] 
 > If you have a Postgres database running on your local machine, you should kill the PID following this command:
+> ```
+> sudo lsof -i :5432
+> ```
+> now you have the PID kill the process 
+> ```
+> kill -9 "PID"
+> ```
 
-```
-sudo lsof -i :5432
-```
-now you have the PID kill the process 
-```
-kill -9 "PID"
-```
 3. Run Docker Compose.
 
 ```
@@ -42,15 +42,15 @@ docker compose -f docker-compose up
 ```
 OUTAGE_CHANNEL_ID=<your_outage_channel_id>
     
-DB_NAME=<your_database_name>
+DB_NAME=<variable can be found under local-env/>.env.postgres>
     
-DB_USERNAME=<your_database_username>
+DB_USERNAME=<variable can be found under local-env/>.env.postgres>
 
-DB_PASSWORD=<your_database_password>
+DB_PASSWORD=<variable can be found under local-env/>.env.postgres>
     
-DB_HOST=<your_database_host>
+DB_HOST=db
     
-DB_PORT=<your_database_port>
+DB_PORT=5432
 
 SLACK_BOT_TOKEN=<your_slack_bot_token>
 
