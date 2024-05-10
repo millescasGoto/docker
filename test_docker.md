@@ -1,6 +1,6 @@
 # ICU Slack Bot
 
-This is a Slack bot thatallows you to manage incidents in your Slack workspace. In order to run this bot locally in your Slack workspace, we have two ways to create your local environment. The steps are listed below:
+This Slack bot allows you to manage incidents in your Slack workspace. To run this bot locally in your Slack workspace, we have two ways to create your local environment. The steps are listed below:
 
 ## Docker Compose installation guide
 
@@ -10,19 +10,20 @@ This is a Slack bot thatallows you to manage incidents in your Slack workspace. 
 
 ### Installation
 
-1. Clone this repository, replace user and token with yours.
+1. Clone this repository, and replace the user and token with yours.
 
 ```
 git clone https://[user]:[token]@github.com/jive/icu-bot.git
 ```
 
-2. Move to local-env directory
+2. Move to the local-env directory
 
 ```
 cd local-env  
 ```
 
-Warning: if you have a postgres data base running you should kill the PID following this commnad:
+[!WARNING] 
+if you have a Postgres database running on your local machine, you should kill the PID following this command:
 
 ```
 sudo lsof -i :5432
@@ -64,6 +65,15 @@ Replace the placeholders with the appropriate values for your environment.
 
 5. The bot should now be running locally and connected to your Slack workspace.
 
+[!NOTE]
+To stop the docker compose type this command under the local_env directory
+```
+docker compose down 
+```
+To remove the docker compose volume(database) type this command under the local_env directory
+```
+docker compose down -v 
+```
 ## step-by-step installation guide
 
 ### Requirements
