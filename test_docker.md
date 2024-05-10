@@ -15,30 +15,19 @@ This Slack bot allows you to manage incidents in your Slack workspace. To run th
 ```
 git clone https://[user]:[token]@github.com/jive/icu-bot.git
 ```
-
-2. Move to the `local-env` directory
-
-```
-cd local-env  
-```
-
 > [!WARNING] 
 > If you have a Postgres database running on your local machine, you should kill the `PID` following this command:
 > ```
 > sudo lsof -i :5432
 > ```
-> now you have the `PID` kill the process 
+> now you have the `PID` to kill the process 
 > ```
 > kill -9 "PID"
 > ```
 
-3. Run Docker Compose.
-
-```
-docker compose -f docker-compose up  
-```
-4. Set up your environment variables by creating a `.env` file with the following variables:
-
+2. Set up your environment variables by creating a `.env` file with the following variables:
+> [!NOTE]
+> `.env` file must go into the main directory 
 ```
 OUTAGE_CHANNEL_ID=<your_outage_channel_id>
     
@@ -60,9 +49,18 @@ JIRA_ACCESS_TOKEN=<your_dev_jira_token>
     
 ENV=local
 ```
+3. Move to the `local-env` directory
 
+```
+cd local-env 
+```
 Replace the placeholders with the appropriate values for your environment.
 
+4. Run Docker Compose.
+
+```
+docker compose -f docker-compose.yaml up  
+```
 5. The bot should now be running locally and connected to your Slack workspace.
 
 > [!NOTE]
