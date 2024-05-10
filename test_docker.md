@@ -22,8 +22,8 @@ git clone https://[user]:[token]@github.com/jive/icu-bot.git
 cd local-env  
 ```
 
-[!WARNING] 
-if you have a Postgres database running on your local machine, you should kill the PID following this command:
+> [!WARNING] 
+> If you have a Postgres database running on your local machine, you should kill the PID following this command:
 
 ```
 sudo lsof -i :5432
@@ -65,12 +65,12 @@ Replace the placeholders with the appropriate values for your environment.
 
 5. The bot should now be running locally and connected to your Slack workspace.
 
-[!NOTE]
-To stop the docker compose type this command under the local_env directory
+> [!NOTE]
+> To stop the docker compose type this command under the local_env directory
 ```
 docker compose down 
 ```
-To remove the docker compose volume(database) type this command under the local_env directory
+> To remove the docker compose volume(database) type this command under the local_env directory
 ```
 docker compose down -v 
 ```
