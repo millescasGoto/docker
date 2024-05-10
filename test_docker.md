@@ -17,7 +17,7 @@ This Slack bot allows you to manage incidents in your Slack workspace. To run th
 git clone https://[git-user]:[git-token]@github.com/jive/icu-bot.git
 ```
 > [!WARNING] 
-> If you have a Postgres database running on your local machine, you should kill the `PID` following this command:
+> If you have a Postgres database running on your local machine, you might have to kill the `PID` following this command:
 > ```
 > sudo lsof -i :5432
 > ```
@@ -28,6 +28,7 @@ git clone https://[git-user]:[git-token]@github.com/jive/icu-bot.git
 2. Set up your environment variables by creating a `.env` file with the following variables:
 > [!NOTE]
 > The `.env` must go under `PATH/icu-bot/.env`
+
 > For the env variables DB_NAME, DB_USERNAME, and DB_PASSWORD go to `local-env/.env.postgres` and match the postgres variables.
 ```
 OUTAGE_CHANNEL_ID=<your_outage_channel_id>
