@@ -16,18 +16,18 @@ This Slack bot allows you to manage incidents in your Slack workspace. To run th
 git clone https://[user]:[token]@github.com/jive/icu-bot.git
 ```
 
-2. Move to the local-env directory
+2. Move to the `local-env` directory
 
 ```
 cd local-env  
 ```
 
 > [!WARNING] 
-> If you have a Postgres database running on your local machine, you should kill the PID following this command:
+> If you have a Postgres database running on your local machine, you should kill the `PID` following this command:
 > ```
 > sudo lsof -i :5432
 > ```
-> now you have the PID kill the process 
+> now you have the `PID` kill the process 
 > ```
 > kill -9 "PID"
 > ```
@@ -44,9 +44,9 @@ OUTAGE_CHANNEL_ID=<your_outage_channel_id>
     
 DB_NAME=<variable can be found under the file local-env/.env.postgres>
     
-DB_USERNAME=<variable can be found under the file  local-env/.env.postgres>
+DB_USERNAME=<variable can be found under the file local-env/.env.postgres>
 
-DB_PASSWORD=<variable can be found under the file  local-env/.env.postgres>
+DB_PASSWORD=<variable can be found under the file local-env/.env.postgres>
     
 DB_HOST=db
     
@@ -66,11 +66,11 @@ Replace the placeholders with the appropriate values for your environment.
 5. The bot should now be running locally and connected to your Slack workspace.
 
 > [!NOTE]
-> To stop the docker compose type this command under the local_env directory
+> To stop the docker compose type this command under the `local_env` directory
 >```
 >docker compose down 
 >```
-> To remove the docker compose volume(database) type this command under the local_env directory
+> To remove the docker compose volume(database) type this command under the `local_env` directory
 >```
 >docker compose down -v 
 >```
