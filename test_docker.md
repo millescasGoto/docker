@@ -28,14 +28,15 @@ git clone https://[git-user]:[git-token]@github.com/jive/icu-bot.git
 2. Set up your environment variables by creating a `.env` file with the following variables:
 > [!NOTE]
 > The `.env` must go under `PATH/icu-bot/.env`
+> For the env variables DB_NAME, DB_USERNAME, and DB_PASSWORD go to `local-env/.env.postgres` and match the postgres variables.
 ```
 OUTAGE_CHANNEL_ID=<your_outage_channel_id>
     
-DB_NAME=<variable can be found under the file local-env/.env.postgres>
+DB_NAME=<POSTGRES_DB>
     
-DB_USERNAME=<variable can be found under the file local-env/.env.postgres>
+DB_USERNAME=<POSTGRES_USERD>
 
-DB_PASSWORD=<variable can be found under the file local-env/.env.postgres>
+DB_PASSWORD=<POSTGRES_PASSWORD>
     
 DB_HOST=db
     
