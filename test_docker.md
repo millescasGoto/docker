@@ -67,13 +67,14 @@ Replace the placeholders with the appropriate values for your environment.
 
 > [!NOTE]
 > To stop the docker compose type this command under the local_env directory
-```
-docker compose down 
-```
+>```
+>docker compose down 
+>```
 > To remove the docker compose volume(database) type this command under the local_env directory
-```
-docker compose down -v 
-```
+>```
+>docker compose down -v 
+>```
+
 ## step-by-step installation guide
 
 ### Requirements
