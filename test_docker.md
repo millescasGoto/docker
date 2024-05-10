@@ -6,40 +6,35 @@ This is a Slack bot thatallows you to manage incidents in your Slack workspace. 
 
 ### Requirements
 
-* [Docker Destop](https://www.docker.com/products/docker-desktop/) 
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) 
 
 ### Installation
 
 1. Clone this repository, replace user and token with yours.
 
 ```
-git remote set-url origin https://[user]:[token]@github.com/jive/icu-bot.git
-
+git clone https://[user]:[token]@github.com/jive/icu-bot.git
 ```
 
 2. Move to local-env directory
 
 ```
 cd local-env  
-
 ```
 
 Warning: if you have a postgres data base running you should kill the PID following this commnad:
 
 ```
 sudo lsof -i :5432
-
 ```
 now you have the PID kill the process 
 ```
 kill -9 "PID"
-
 ```
 3. Run Docker Compose.
 
 ```
 docker compose -f docker-compose up  
-
 ```
 4. Set up your environment variables by creating a `.env` file with the following variables:
 
