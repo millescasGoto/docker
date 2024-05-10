@@ -42,11 +42,11 @@ docker compose -f docker-compose up
 ```
 OUTAGE_CHANNEL_ID=<your_outage_channel_id>
     
-DB_NAME=<variable can be found under local-env/>.env.postgres>
+DB_NAME=<variable can be found under the file local-env/.env.postgres>
     
-DB_USERNAME=<variable can be found under local-env/>.env.postgres>
+DB_USERNAME=<variable can be found under the file  local-env/.env.postgres>
 
-DB_PASSWORD=<variable can be found under local-env/>.env.postgres>
+DB_PASSWORD=<variable can be found under the file  local-env/.env.postgres>
     
 DB_HOST=db
     
