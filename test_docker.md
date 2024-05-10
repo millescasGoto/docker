@@ -75,7 +75,7 @@ Replace the placeholders with the appropriate values for your environment.
 >docker compose down -v 
 >```
 
-## step-by-step installation guide
+## Step-by-step installation guide
 
 ### Requirements
 
